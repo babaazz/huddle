@@ -12,6 +12,10 @@ const Button = styled.button`
     opacity: 0.5;
     transform: scale(0.99);
   }
+  @media screen and (max-width: 750px) {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+  }
 `;
 
 export default Button;

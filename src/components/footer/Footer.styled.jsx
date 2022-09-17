@@ -12,6 +12,10 @@ export const FooterWrapper = styled.div`
   gap: 5rem;
   margin: auto;
   background-color: hsl(192, 100%, 9%);
+  @media screen and (max-width: 750px){
+    flex-direction: column;
+    gap: 5rem;
+  }
 `;
 
 export const FooterContacts = styled.div`
@@ -46,6 +50,15 @@ export const FooterContacts = styled.div`
     display: flex;
     font-size: 2rem;
     gap: 2rem;
+  }
+  @media screen and (max-width: 750px) {
+    order: 2;
+    .filter-logo {
+      width: 175px;
+    }
+    p {
+      width: 100%;
+    }
   }
 `;
 
@@ -82,6 +95,20 @@ export const Newsletter = styled.div`
       padding: 0.8rem 2.5rem;
       font-size: 1rem;
       font-weight: 600;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    order: 1;
+    .form {
+      flex-direction: column;
+      margin-top: 1.5rem;
+      gap: 1.5rem;
+      input {
+        width: 100%;
+      }
+    }
+    p {
+      width: 100%;
     }
   }
 `;

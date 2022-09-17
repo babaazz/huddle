@@ -23,8 +23,8 @@ const Section = () => {
   return (
     <>
       <SectionBG bgColor={"hsl(207, 100%, 98%)"} id="section1">
-        <SectionContainer>
-          <SectionPart>
+        <SectionContainer id="sec1">
+          <SectionPart className="content">
             <SectionPartContent>
               <h1>Grow Together</h1>
               <p>
@@ -34,7 +34,7 @@ const Section = () => {
               </p>
             </SectionPartContent>
           </SectionPart>
-          <SectionPart>
+          <SectionPart className="img">
             <Image src={growIllustration} alt="jaj" />
           </SectionPart>
         </SectionContainer>
@@ -47,11 +47,11 @@ const Section = () => {
         position2={"bottom"}
         bgColor={"#fff"}
       >
-        <SectionContainer>
-          <SectionPart>
+        <SectionContainer id="sec2">
+          <SectionPart className="img">
             <Image src={flowingConversation} alt="jaj" />
           </SectionPart>
-          <SectionPart>
+          <SectionPart className="content">
             <SectionPartContent>
               <h1>Flowing Conversation</h1>
               <p>
@@ -65,8 +65,8 @@ const Section = () => {
       </SectionBG>
 
       <SectionBG bgColor={"hsl(207, 100%, 98%)"} id="section3">
-        <SectionContainer>
-          <SectionPart>
+        <SectionContainer id="sec3">
+          <SectionPart className="content">
             <SectionPartContent>
               <h1>Your Users</h1>
               <p>
@@ -76,7 +76,7 @@ const Section = () => {
               </p>
             </SectionPartContent>
           </SectionPart>
-          <SectionPart>
+          <SectionPart className="img">
             <Image src={userIllustration} alt="jaj" />
           </SectionPart>
         </SectionContainer>

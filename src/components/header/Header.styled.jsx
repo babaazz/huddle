@@ -7,6 +7,13 @@ const HeaderContainer = styled.header`
   margin: auto;
   width: 90%;
   padding: 5rem 0;
+  @media screen and (max-width: 750px) {
+    width: 97%;
+    padding: 3rem 0;
+    .logo {
+      width: 150px;
+    }
+  }
 `;
 
 export default HeaderContainer;

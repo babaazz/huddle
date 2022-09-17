@@ -28,11 +28,25 @@ export const SectionContainer = styled.div`
   width: 80%;
   max-width: 1200px;
   margin: auto;
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    width: 90%;
+    gap: 6rem;
+  }
 `;
 
 export const SectionPart = styled.div`
   text-align: left;
   width: 50%;
+  @media screen and (max-width: 750px) {
+    &.content {
+      order: 2;
+    }
+    &.img {
+      order: 1;
+    }
+    width: 100%;
+  }
 `;
 
 export const SectionPartContent = styled.div`
@@ -43,12 +57,19 @@ export const SectionPartContent = styled.div`
   text-align: left;
   gap: 1rem;
   p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 88%;
   }
   h1 {
     font-weight: 700;
     font-size: 2.7rem;
+  }
+  @media screen and (max-width: 750px) {
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 1.6rem;
+    }
   }
 `;
 
