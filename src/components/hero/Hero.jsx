@@ -1,11 +1,18 @@
-import { HeroContent, HeroStats, StatsContainer } from "./Hero.styled";
+import {
+  HeroContainer,
+  HeroContent,
+  HeroStats,
+  StatsContainer,
+} from "./Hero.styled";
 import Button from "../button/Button.styled";
-import { ReactComponent as ScreenMoc } from "../../images/screen-mockups.svg";
-import { ReactComponent as MessagesSVG } from "../../images/icon-messages.svg";
+import iconCommunities from "../../images/icon-communities.svg";
+import screeMockups from "../../images/screen-mockups.svg";
+import iconMessages from "../../images/icon-messages.svg";
+import bgTop1 from "../../images/bg-section-top-desktop-1.svg";
 
 const Hero = () => {
   return (
-    <>
+    <HeroContainer bgUrl={bgTop1}>
       <HeroContent>
         <h1>Build The Community Your Fans Will Love</h1>
         <p>
@@ -18,23 +25,23 @@ const Hero = () => {
         </Button>
       </HeroContent>
       <HeroContent>
-        <ScreenMoc />
+        <img src={screeMockups} alt="screen" />
       </HeroContent>
       <HeroContent>
         <HeroStats>
           <StatsContainer>
-            <MessagesSVG />
+            <img src={iconCommunities} alt="messages" />
             <h1>1.4k+</h1>
             <p>Communities Formed</p>
           </StatsContainer>
           <StatsContainer>
-            <MessagesSVG />
+            <img src={iconMessages} alt="messages" />
             <h1>2.7m+</h1>
             <p>Messages Sent</p>
           </StatsContainer>
         </HeroStats>
       </HeroContent>
-    </>
+    </HeroContainer>
   );
 };
 

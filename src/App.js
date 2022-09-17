@@ -2,6 +2,8 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./globalStyles";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
+import Section from "./components/section/Section";
+import Footer from "./components/footer/Footer";
 
 const theme = {
   colors: {
@@ -24,6 +26,8 @@ function App() {
       <GlobalStyles />
       <Header />
       <Hero />
+      <Section />
+      <Footer />
     </ThemeProvider>
   );
 }

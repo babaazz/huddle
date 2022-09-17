@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const HeroContainer = styled.header`
+  background-image: url(${({ bgUrl }) => bgUrl});
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 20rem;
+`;
+
 export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -7,11 +15,15 @@ export const HeroContent = styled.div`
   justify-content: center;
   text-align: center;
   width: 80%;
-  margin: 8rem auto;
+  max-width: 1200px;
+  margin: 8rem auto 0 auto;
   gap: 2.5rem;
   h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 700;
+  }
+  h2 {
+    font-size: 2.2rem;
   }
   p {
     width: 58%;
@@ -30,7 +42,7 @@ export const HeroStats = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 80%;
   margin: auto;
   gap: 10rem;
 `;
@@ -41,14 +53,14 @@ export const StatsContainer = styled.div`
   align-items: flex-start;
   justify-content: center;
   gap: 1rem;
-  width: 50%;
+  flex: 1;
   text-align: left;
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   p {
     font-size: 1.5rem;
     opacity: 0.8;
-    text-align: center;
+    width: 100%;
   }
 `;
