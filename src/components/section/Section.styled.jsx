@@ -18,6 +18,12 @@ export const SectionBG = styled.div`
   &#section4 {
     padding: 12rem 0 20rem 0;
   }
+  @media screen and (max-width: 750px) {
+    background-image: url(${({ bgMobile1 }) => bgMobile1}),
+      url(${({ bgMobile2 }) => bgMobile2});
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 100%;
+  }
 `;
 
 export const SectionContainer = styled.div`

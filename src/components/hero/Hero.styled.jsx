@@ -6,6 +6,13 @@ export const HeroContainer = styled.header`
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 20rem;
+  @media screen and (max-width: 750px) {
+    background-image: url(${({ bgMobile }) => bgMobile});
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 10rem;
+  }
 `;
 
 export const HeroContent = styled.div`

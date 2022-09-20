@@ -17,7 +17,11 @@ import userIllustration from "../../images/illustration-your-users.svg";
 import bgBottom1 from "../../images/bg-section-bottom-desktop-1.svg";
 import bgTop2 from "../../images/bg-section-top-desktop-2.svg";
 import bgBottom2 from "../../images/bg-section-bottom-desktop-2.svg";
-import footerBg from "../../images/bg-footer-top-desktop.svg";
+import bgMobileTop2 from "../../images/bg-section-top-mobile-2.svg";
+import bgMobileBottom1 from "../../images/bg-section-bottom-mobile-1.svg";
+import bgMobileBottom2 from "../../images/bg-section-bottom-mobile-2.svg";
+import bgFooter from "../../images/bg-footer-top-desktop.svg";
+import bgFooterMobile from "../../images/bg-footer-top-mobile.svg";
 
 const Section = () => {
   return (
@@ -43,6 +47,8 @@ const Section = () => {
         id="section2"
         bgUrl1={bgBottom1}
         bgUrl2={bgTop2}
+        bgMobile1={bgMobileBottom1}
+        bgMobile2={bgMobileTop2}
         position1={"top"}
         position2={"bottom"}
         bgColor={"#fff"}
@@ -84,7 +90,9 @@ const Section = () => {
       <SectionBG
         id="section4"
         bgUrl1={bgBottom2}
-        bgUrl2={footerBg}
+        bgUrl2={bgFooter}
+        bgMobile1={bgMobileBottom2}
+        bgMobile2={bgFooterMobile}
         position1={"top"}
         position2={"bottom"}
         bgColor={"#fff"}

@@ -9,10 +9,11 @@ import iconCommunities from "../../images/icon-communities.svg";
 import screeMockups from "../../images/screen-mockups.svg";
 import iconMessages from "../../images/icon-messages.svg";
 import bgTop1 from "../../images/bg-section-top-desktop-1.svg";
+import bgMobile from "../../images/bg-section-top-mobile-1.svg";
 
 const Hero = () => {
   return (
-    <HeroContainer bgUrl={bgTop1}>
+    <HeroContainer bgUrl={bgTop1} bgMobile={bgMobile}>
       <HeroContent>
         <h1>Build The Community Your Fans Will Love</h1>
         <p>
